@@ -1,0 +1,35 @@
+<div class="container mt-4 ">
+    <h1>Area of a triangle</h1>
+
+    <div class="row justify-ontent center mt-3">
+        <div class="col-md-6">
+            <form [formGroup]="myGroup" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="base">base</label>
+                    <input class="form-control mt-1" formControlName="base" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">height</label>
+                    <input class="form-control mt-1" formControlName="height" required>
+                </div>
+                <div class="form-group">
+                    <div class="d-grid gap-2 mt-2">
+                        <button class="btn btn-primary" type="submit">calculate</button>
+                      </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-ontent center mt-3">
+        <div class="col-md-6">
+            <div class="card" >
+                <div class="card-body">
+                    <h5>Output</h5>
+                    <p class="card-text">"area": {{area}}</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

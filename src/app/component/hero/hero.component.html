@@ -1,0 +1,26 @@
+<div class="container ">
+
+    <h2 class="mt-4">{{title}}</h2>
+    
+    <div class="row">
+        <div class="col-12">
+            <ul class="heroes mt-3">
+                <li *ngFor="let hero of heroes">
+                   <span class="pointer" (click)="onSelect(hero)">
+                    {{hero.id}} {{hero.name}}
+                   </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div>
+        <div *ngIf="selectedHero">
+            <label for="hero-name">My hero is: <span class="text-decoration-underline">{{selectedHero.name}}</span></label>
+        </div>
+    </div>
+    
+
+
+
+</div>
